@@ -5,11 +5,14 @@ import testpages.interfface.InterfacesOfTestPages;
 import tests.CheckBoxPage;
 import tests.RadioButtonPage;
 import tests.TextBoxPage;
+import tests.WebTablesPage;
+
 public class Pages extends Base implements InterfacesOfTestPages{
     @Test
     public void Pages() {
         new TextBoxPage();
         new CheckBoxPage();
         new RadioButtonPage();
+        new WebTablesPage();
     }
 }

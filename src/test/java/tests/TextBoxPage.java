@@ -17,7 +17,7 @@ public class TextBoxPage extends Base implements FindElementsInterfaces {
         WebElement permanentAddressInput = FindElement(By.id("permanentAddress"));
         permanentAddressInput.sendKeys("permanentAddress te buraya");
         WebElement closeAdsElement = FindElement(By.id("close-fixedban"));
-        closeAdsElement.click();
+        if (closeAdsElement.isDisplayed())closeAdsElement.click();
         WebElement submitButton = FindElement(By.id("submit"));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", submitButton);
         submitButton.submit();
