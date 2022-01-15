@@ -2,10 +2,9 @@ package testpages;
 import base.Base;
 import org.junit.Test;
 import testpages.interfface.InterfacesOfTestPages;
-import tests.CheckBoxPage;
-import tests.RadioButtonPage;
-import tests.TextBoxPage;
-import tests.WebTablesPage;
+import tests.*;
+
+import java.text.BreakIterator;
 
 public class Pages extends Base implements InterfacesOfTestPages{
     @Test
@@ -14,5 +13,10 @@ public class Pages extends Base implements InterfacesOfTestPages{
         new CheckBoxPage();
         new RadioButtonPage();
         new WebTablesPage();
+        new ButtonsPage();
+        new LinksPage();
+        new BrokenLinksImagesPage();
+        new UploadAndDownloadPage();
+        new DynamicPropertiesPage();
     }
 }
